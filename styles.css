@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+.main-div {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-img {
+    height: 100%;
+    width: 50%;
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    font-family: norse-bold, 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 5rem;
+}
+
+.logo-text-div {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.form-header,
+.form-footer,
+.form {
+    flex-grow: 1;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 36px;
+}
+
+.form {
+    display: flex;
+    padding-left: 36px;
+    box-shadow: 3px 3px 5px gray;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    padding: 5px;
+    display: flex;
+    gap: 96px;
+    justify-content: space-between;
+}
+
+.label-input-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+
+input:user-invalid+span::before {
+    margin-left: 16px;
+    content: "✖";
+    color: red;
+    gap: 0;
+    position: absolute;
+}
+
+.logo-img {
+    height: 200px;
+    width: auto;
+}
+
+.form-footer {
+    padding-left: 36px;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #596D48;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #3e8e41
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+a:link {
+    text-decoration: none;
+    color: #596D48;
+}
